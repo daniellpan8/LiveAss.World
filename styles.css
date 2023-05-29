@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+
+#loading-bar {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #000;
+  /*position: absolute;
+*/}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: green;
+}
