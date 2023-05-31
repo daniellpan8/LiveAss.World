@@ -1,0 +1,83 @@
+/*
+dark orange = #4a3601
+lighter orange = #cc9502
+background black = #111111
+gray = #2e2e2e
+*/
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+  color: #fff;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /* gray */
+  border: 1rem solid #2e2e2e;
+  box-sizing: border-box;
+  background: #111111;
+  /* dark orange */
+  background-image: radial-gradient(#4a3601 1px, transparent 0);
+  background-size: 40px 40px;
+  
+}
+
+.indexContainer h1 {
+  font-size: 5rem;
+}
+
+.indexContainer h3 {
+  font-size: 2rem;
+}
+
+#loadingBar {
+  display: flex;
+  width: 20rem;
+  height: 2rem;
+  border: 2px solid white;
+  position: relative;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  /* lighter orange */
+  background-color: #cc9502;
+  position: relative;
+  
+}
+
+#progressText {
+  
+}
+
+/*----------media to fit different viewports----------*/
+@media (max-width: 1200px) {
+  .indexContainer {
+    background-image: radial-gradient(#4a3601 2px, transparent 0);
+  }
+
+  .indexContainer h1 {
+    font-size: 8rem;
+  }
+  .indexContainer h3 {
+    font-size: 2.3rem;
+  }
+
+  #loadingBar {
+    width: 40rem;
+    height: 3rem;
+
+  }
+
+}
